@@ -1,4 +1,4 @@
-@media screen and (1100px) {}
+@media screen and (max-width 1100px) {}
 
 
 
@@ -10,4 +10,13 @@
 
 
 
-@media screen and (max-width:600px) {}
+@media screen and (max-width:600px) {
+    #upper>aside {
+        width: 50px
+    }
+
+    #upper>main {
+        width: calc(100% - 50px);
+
+    }
+}
