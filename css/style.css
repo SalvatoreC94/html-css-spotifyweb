@@ -14,10 +14,83 @@
     --bg-color5: #808080;
     --bg-color6: #a3a3a3;
     --bg-color7: #adff2f;
+    --lower-hight: 100px;
+    --aside-width: 200px
+}
+
+#upper {
+    height: calc(100vh - var(--lower-hight));
+    display: flex;
+}
+
+#upper>aside {
+    width: var(--aside-width);
+}
+
+#upper>main {
+    width: calc(100% - var(--aside-width));
+    overflow: auto;
+}
+
+#upper>main>* {
+    margin-bottom: 20px;
+}
+
+#upper main header {
+    text-align: right;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px 10px;
 
 }
 
-a {
+#upper main>nav>ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#upper>main>nav>ul>li>a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    padding-bottom: 30px;
+}
+
+.music-card img {
+    margin-left: 10px;
+    padding-left: 10px;
+    max-width: 170px;
+}
+
+.music-card p {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+aside {
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
+}
+
+main {
+    background-color: var(--bg-color3);
+}
+
+/ a {
     color: var(--bg-color1);
 
 }
@@ -48,7 +121,7 @@ a:hover {
 
 /* SIDENAV */
 
-aside {
+/* aside {
     background-color: #060505;
     height: 100%;
     width: 250px;
@@ -97,27 +170,19 @@ aside #aside-top .menulink li {
 /* MAIN SECTION */
 
 
-main {
+/* main {
     background-color: var(--bg-color3);
     margin-left: 250px;
     margin-bottom: 60px;
     color: white;
     overflow-y: auto;
-}
-
-main header {
-    text-align: right;
-    position: sticky;
-    top: 0;
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 20px 10px;
-
-}
+} */
 
 
 
-.toplist ul li {
+
+
+/* .toplist ul li {
     padding-right: 20px;
     font-weight: bold;
     color: var(--bg-color1);
@@ -128,47 +193,34 @@ main header {
 
 .toplist ul li>a {
     text-decoration: none;
-}
+} */
 
 
 
-.toplist {
-    align-self: center;
-}
 
-.toplist {
+
+/* .toplist {
     display: flex;
     justify-content: center;
     width: 100%;
-}
+} */
 
-.container-flex {
+/* .container-flex {
     display: flex;
     flex-grow: grow wrap;
     margin: 0 auto;
     justify-content: flex-start;
     align-items: center;
-}
+} */
 
-.container-flex .toplist a {
-    justify-content: center;
-}
+/* .container-flex .toplist {
+    color: var(--bg-color1);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+} */
 
-.music-card {
-    padding-bottom: 30px;
-}
 
-.music-card img {
-    margin-left: 10px;
-    padding-left: 10px;
-    max-width: 170px;
-}
-
-.music-card p {
-    font-size: 12px;
-    font-weight: bold;
-    padding-top: 10px;
-}
 
 /* FOOTER */
 footer {
@@ -176,27 +228,4 @@ footer {
     justify-content: space-between;
 }
 
-/* DEBUG */
-/* .debug #upper {
-    background-color: lightcoral;
-}
-
-.debug #upper>aside {
-    background-color: green;
-}
-
-.debug #upper>main {
-    background-color: blue;
-}
-
-.debug #lower {
-    background-color: aqua;
-}
-
-.debug #lower>* {
-    background-color: violet;
-}
-
-.debug .my-col {
-    background-color: yellow;
-} */
+*/ */
