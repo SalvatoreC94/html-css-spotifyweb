@@ -48,7 +48,7 @@ a:hover {
 
 /* SIDENAV */
 
-.sidenav {
+aside {
     background-color: #060505;
     height: 100%;
     width: 250px;
@@ -65,7 +65,7 @@ a:hover {
     background-color: transparent;
 }
 
-.menulink li {
+aside #aside-top .menulink li {
     padding: 6px 6px 6px 0;
     text-decoration: none;
     font-size: 15px;
@@ -88,12 +88,14 @@ a:hover {
 
 .fa-home,
 .fa-search,
-.fa-book {
+.fa-book,
+.fa-plus {
     color: white;
     background-color: transparent;
 }
 
 /* MAIN SECTION */
+
 
 main {
     background-color: var(--bg-color3);
@@ -103,13 +105,25 @@ main {
     overflow-y: auto;
 }
 
+main header {
+    text-align: right;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px 10px;
+
+}
+
+
+
 .toplist ul li {
     padding-right: 20px;
     font-weight: bold;
     color: var(--bg-color1);
     letter-spacing: 2px;
     list-style: none;
-    display: flex;
+    justify-content: space-between;
 }
 
 .toplist ul li>a {
@@ -157,7 +171,10 @@ main {
 }
 
 /* FOOTER */
-
+footer {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* DEBUG */
 /* .debug #upper {
