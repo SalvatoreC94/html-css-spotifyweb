@@ -18,6 +18,36 @@
     --aside-width: 200px
 }
 
+aside {
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
+}
+
+main {
+    background-color: var(--bg-color3);
+}
+
+/ a {
+    color: var(--bg-color1);
+
+}
+
+a:hover {
+    color: var(--bg-color7);
+
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.plb-20 {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+/* upper main */
+
 #upper {
     height: calc(100vh - var(--lower-hight));
     display: flex;
@@ -46,17 +76,27 @@
 
 }
 
-#upper main>nav>ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.upgrade {
+    color: var(--bg-color1);
 }
 
-#upper>main>nav>ul>li>a {
-    text-decoration: none;
+.nav-container ul>li {
+    color: var(--bg-color1);
     display: inline-block;
     padding: 5px 10px;
+    vertical-align: middle;
+
+}
+
+.nav-container ul>li>a {
+    text-decoration: none;
+
+}
+
+.nav-container ul>li>hr {
+    width: 30px;
+    margin-left: 40%;
+    color: var(--bg-color7);
 }
 
 
@@ -75,87 +115,36 @@
     max-width: 170px;
 }
 
-.music-card p {
+.music-card p,
+.music-card h5 {
     font-size: 12px;
     font-weight: bold;
     padding-top: 10px;
-}
-
-aside {
-    background-color: var(--bg-color2);
-    color: var(--bg-color1);
-}
-
-main {
-    background-color: var(--bg-color3);
-}
-
-/ a {
-    color: var(--bg-color1);
-
-}
-
-a:hover {
-    color: var(--bg-color7);
-
-}
-
-
-.ptb-30 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.pb-50 {
-    padding-bottom: 50px;
-}
-
-.plb-20 {
     padding-left: 20px;
-    padding-bottom: 30px;
+    color: white;
+    text-align: center;
 }
 
-.ft-15 {
-    font-size: 15px;
-}
+
+
+
+
+
+
+
+
 
 /* SIDENAV */
 
-/* aside {
-    background-color: #060505;
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    padding: 20px 0 0 32px;
-    overflow: hidden;
-}
+
+
 
 .logo img {
     max-width: 150px;
     background-color: transparent;
 }
 
-aside #aside-top .menulink li {
-    padding: 6px 6px 6px 0;
-    text-decoration: none;
-    font-size: 15px;
-    color: var(--bg-color5);
-    display: block;
-}
 
-.menulink li:first-child {
-    color: white;
-    padding-left: 10px;
-    border-left: 2px solid green;
-}
-
-.menulink i {
-    padding-right: 20px;
-
-}
 
 
 
@@ -165,6 +154,9 @@ aside #aside-top .menulink li {
 .fa-plus {
     color: white;
     background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: start;
 }
 
 /* MAIN SECTION */
@@ -226,6 +218,31 @@ aside #aside-top .menulink li {
 footer {
     display: flex;
     justify-content: space-between;
+    background-color: var(--bg-color4);
 }
 
-*/ */
+.footer-left img {
+    padding: 20px 10px;
+    max-width: 80px;
+    float: inline-start;
+
+}
+
+.footer-left h6,
+.footer-left span {
+    color: var(--bg-color1);
+    display: flex;
+
+}
+
+
+
+.footer-center .top ul li {
+    display: inline;
+}
+
+.footer-center .top ul li i {
+    padding: 10px 20px;
+    color: var(--bg-color1);
+    font-size: 20px
+}
